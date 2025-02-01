@@ -1,0 +1,139 @@
+/* client/src/components/Navbar.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--background-color);
+    background: linear-gradient(90deg, var(--gradient-start) 0%, var(--gradient-middle) 50%, var(--gradient-end) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  
+  /* Divide the navbar into three sections */
+  .navbar-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-left {
+    justify-content: flex-start;
+    margin-left: 30px;
+  }
+  
+  .navbar-right {
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+  
+  /* Logo styling for the homepage */
+  .navbar-logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  /* Title styles */
+  .navbar h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: var(--text-color);
+  }
+  
+  /* Button Styles */s
+  .back-button,
+  .theme-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--button-color);
+  }
+  
+  .home-label {
+    cursor: pointer;
+  }
+
+  .home-label:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+  }
+
+  .back-button:hover,
+  .theme-btn:hover{
+    color: var(--button-hover-color);
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+  }
+  
+  .back-button {
+    font-size: 1.2em;
+  }
+  
+  .theme-btn {
+    font-size: 1.5em;
+  }
+  
+  /* Modal Styles */
+  .theme-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1050;
+    display: none;
+  }
+  
+  .theme-modal-overlay.active {
+    display: block;
+  }
+  
+  .theme-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1100;
+    width: 300px;
+    max-width: 90%;
+  }
+  
+  .theme-modal h2 {
+    margin-top: 0;
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  .theme-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .theme-list li {
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    border: 1px solid var(--button-color);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: background 0.3s ease;
+  }
+  
+  .theme-list li:hover {
+    background: var(--button-color);
+    color: #fff;
+  }
+  

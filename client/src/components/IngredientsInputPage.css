@@ -1,0 +1,119 @@
+/* client/src/components/IngredientsInputPage.css */
+
+.input-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background: var(--background-color);
+  background: linear-gradient(90deg, var(--gradient-start) 3%, var(--gradient-middle) 59%, var(--gradient-end) 91%);
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  position: relative;
+}
+
+.home-button {
+  position: absolute; 
+  top: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 0.9em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.home-button:hover {
+  background-color: var(--button-hover-color);
+  transform: translateY(-2px);
+}
+
+.input-page-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.input-page-container p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-form label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+/* Style for both text and number inputs */
+.input-form input[type="text"],
+.input-form input[type="number"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-form input[type="text"]:focus,
+.input-form input[type="number"]:focus {
+  outline: none;
+  background-color: #eeeeee;
+  box-shadow: 0 0 5px rgba(211, 211, 211, 0.5);
+}
+
+.mode-selection,
+.match-selection,
+.meal-type-selection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mode-selection span,
+.match-selection span,
+.meal-type-selection span {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.mode-selection label,
+.match-selection label,
+.meal-type-selection label {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.submit-button {
+  padding: 15px;
+  font-size: 1em;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: var(--button-hover-color);
+  transform: translateY(-2px);
+}
+
+

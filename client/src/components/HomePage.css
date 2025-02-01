@@ -1,0 +1,61 @@
+/* client/src/components/HomePage.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5% 2% 0% 2%;
+  background: var(--background-color);
+  background: linear-gradient(90deg, var(--gradient-start) 3%, var(--gradient-middle) 59%, var(--gradient-end) 91%);
+}
+
+.home-content-container {
+  width: 50%;
+}
+
+.home-content {
+  width: 100%;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.get-started-button {
+  padding: 15px 30px;
+  font-size: 1em;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.get-started-button:hover {
+  background-color: var(--button-hover-color);
+  transform: translateY(-2px);
+}
+
+.home-image {
+  margin-top: 40px;
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: auto;
+}
