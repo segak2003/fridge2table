@@ -39,11 +39,6 @@ function RecipeDetailPage() {
     <>
       <Navbar showBack={true} />
       <div className="detail-page-container">
-        {/* Back Button */}
-        <button onClick={() => navigate(-1)} className="detail-back-button" aria-label="Go Back">
-          ← Back
-        </button>
-
         <h1 className="recipe-title">{title}</h1>
         <div className="detail-content">
           <img src={image} alt={title} className="detail-image" />
