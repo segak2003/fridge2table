@@ -36,7 +36,7 @@ function DisplayDishesPage() {
       const numberOfDishes = queryParams.get('numberOfDishes') || 15;
 
       try {
-        const backendURL = `http://localhost:9000/search`;
+        const backendURL = `${process.env.REACT_APP_API_URL}/search`;
 
         const params = {
           ingredients: ingredients,
@@ -73,10 +73,8 @@ function DisplayDishesPage() {
       <Navbar showBack={true} />
       <div className="dishes-page-container">
         {/* Back Button */}
-        <button onClick={handleBack} className="back-button" aria-label="Go Back">
-          ← Back
-        </button>
-        <h1>Recommended Dishes</h1>
+      
+        <h1 className="text-title">Recommended Dishes</h1>
 
         {loading && <p>Loading recipes...</p>}
         {error && <p className="error-message">{error}</p>}
@@ -97,9 +95,6 @@ function DisplayDishesPage() {
                 <div className="recipe-info">
                   <h2>{recipe.title}</h2>
                   <p>Health Score: {recipe.healthScore}</p>
-                  <button className="details-button">
-                    View Recipe
-                  </button>
                 </div>
               </div>
             </Link>
