@@ -6,11 +6,11 @@ Fridge2Table is a web application that inspires you to cook delicious dishes bas
 
 This is an early stage of Fridge2Table, more features and improvements are coming soon!
 
-## Features
+# Features
 Ingredient-Based Recipe Search:
 Input a comma-separated list of ingredients to find recipes that match what’s in your fridge.
 
-# Search Modes:
+## Search Modes:
 
 Inclusive Mode: Find recipes that may require additional ingredients.
 Exclusive Mode: Find recipes that closely match your available ingredients.
