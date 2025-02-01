@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, '../client/build')));
 app.use(cors({
-    origin: `${process.env.REACT_APP_URL}:${9000}`,
+    origin: process.env.REACT_APP_URL,
     methods: ['GET', 'POST'],
     credentials: true
 }));
